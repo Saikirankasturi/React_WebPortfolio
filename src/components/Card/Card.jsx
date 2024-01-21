@@ -1,12 +1,15 @@
 import React from 'react'
 import './Card.css'
-const Card = ({emoji,heading,detail}) => {
+import { Link } from "react-scroll";
+const Card = ({ emoji, heading, detail }) => {
   return (
     <div className="card">
-        <img src={emoji} alt="" />
-        <span>{heading}</span>
-        <span>{detail}</span>
-        <button className='c-button'>LEARN MORE</button>
+      <img src={emoji} alt="" />
+      <span>{heading}</span>
+      <span>{detail}</span>
+      <Link to="contact" spy={true} smooth={true}>
+        <button className='c-button'>Get In Touch</button>
+      </Link>
     </div>
   )
 }

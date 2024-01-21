@@ -1,4 +1,4 @@
-.services{
+.services {
     padding: 0 3rem 0 3rem;
     display: flex;
     height: 40vh;
@@ -6,67 +6,85 @@
     margin-top: 9rem;
     margin-bottom: 13rem;
 }
-.awesome{
+
+.awesome {
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-top: 4rem;
 }
-.awesome>:nth-child(1)
-{
+
+.awesome>:nth-child(1) {
     color: var(--black);
     font-size: 2.5rem;
     font-weight: bold;
 }
-.awesome>:nth-child(2)
-{
+
+.awesome>:nth-child(2) {
     color: var(--primarylight);
     font-size: 2.5rem;
     font-weight: bold;
 
 }
-.awesome>:nth-child(3)
-{
+
+.awesome>:nth-child(3) {
     color: var(--gray);
     font-size: 18px;
     margin-top: 1rem;
+
 }
-.s-button{
+
+.s-button {
     width: 10rem;
     height: 3.5rem;
     margin-top: 2rem;
 }
- .cards{
+
+.cards {
     position: relative;
 }
-.cards>*{
+
+.cards>* {
     position: absolute;
-} 
+}
+
 /* .cards{
     left: 8%;
 } */
-.s-blur2{
+.s-blur2 {
     left: 14rem;
     top: 8rem;
 }
-.s-blur1{
+
+.s-blur1 {
     top: 13rem;
     left: -18rem;
 }
+
 @media screen and (max-width: 480px) {
     .services {
-      margin-top: 0;
-      flex-direction: column;
-      gap: 5rem;
-      height: 66rem;
-      padding: 0;
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
     }
-  
+
+    .awesome>:nth-child(3) {
+        color: var(--gray);
+        font-size: 18px;
+        margin-top: 1rem;
+        text-align: justify;
+
+    }
+
     .cards {
-      display: flex;
-      flex-direction: column;
-      gap: 17rem;
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
     }
-    .cards > * {
-      position: static;
+
+    .cards>* {
+        position: static;
     }
-  }
+}

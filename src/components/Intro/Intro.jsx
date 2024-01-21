@@ -12,6 +12,7 @@ import glassesimoji from '../../img/glassesimoji.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import { themeContext } from "../../Context";
 import { motion } from 'framer-motion'
+import { Link } from "react-scroll";
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -23,9 +24,14 @@ const Intro = () => {
         <div className="i-name">
           <span style={{ color: darkMode ? "white" : "" }}>Hey, I am</span>
           <span>Saikiran Kasturi</span>
-          <span>A passionate Web Developer and Fullstack Developer.</span>
+          <span>I just graduated, and I'm excited to start my journey in the tech world. I really enjoy making websites and have learned a lot during my studies.
+            I'm a fast learner, and I am ready to work on projects.
+            My goal is to use what I've learned to be a great team member and keep growing in the tech field.
+          </span>
         </div>
-        <button className="button i-button">Hire me</button>
+        <Link to="contact" spy={true} smooth={true}>
+          <button className="button i-button">Hire me</button>
+        </Link>
         <div className="i-icons">
           <a href="https://github.com/Saikirankasturi">
             <img src={Github} alt="GitHub Logo" />
@@ -33,9 +39,9 @@ const Intro = () => {
           <a href="https://www.linkedin.com/in/saikirankasturi/">
             <img src={LinkedIn} alt="LinkedIn Logo" />
           </a>
-          <a href="https://www.instagram.com/saikiran_kasturi/">
+          {/* <a href="https://www.instagram.com/saikiran_kasturi/">
             <img src={Instagram} alt="Instagram Logo" />
-          </a>
+          </a> */}
 
         </div>
       </div>
