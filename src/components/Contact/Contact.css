@@ -54,5 +54,8 @@ textarea{
     .c-right .user{
         width: 16rem;
     }
+    .button{
+        cursor: pointer;
+    }
 
 }   
