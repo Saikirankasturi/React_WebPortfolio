@@ -53,24 +53,24 @@ const Intro = () => {
         <img src={sai} alt="" />
         <motion.img
           className="image"
-          initial={{ left: "-46%" }}
-          whileInView={{ left: "-20%" }}
+          initial={{ left: "-6.96rem"}}
+          whileInView={{ left: "-1.5rem" }}
           transition={transition}
           src={glassesimoji}
           alt=""
         />
         <motion.div
           className="floating-div"
-          initial={{ top: "-4%", left: "74%" }}
-          whileInView={{ left: "68%" }}
+          initial={{ top: "0.04rem", left: "0rem" }}
+          whileInView={{ left: "17.68rem" }}
           transition={transition}>
 
           <FloatingDiv image={crown} text1='Web' text2='Developer' />
         </motion.div>
 
         <motion.div
-          initial={{ left: "9rem", top: "18rem" }}
-          whileInView={{ left: "0rem" }}
+          initial={{ left: "8rem", top: "18rem" }}
+          whileInView={{ left: "-2rem" }}
           transition={transition}>
           <FloatingDiv image={thumbup} text1='Java' text2='Developer' />
         </motion.div>
