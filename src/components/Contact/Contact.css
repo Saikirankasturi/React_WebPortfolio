@@ -4,9 +4,11 @@
     height: 80vh;
     margin-top: 4rem;
       /* scroll */
-  padding-top: 3rem;
+    padding-top: 3rem;
 }
-
+.button{
+    cursor: pointer;
+}
 .c-right{
     display: flex;
     justify-content: center;
