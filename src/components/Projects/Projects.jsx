@@ -25,9 +25,9 @@ const Projects = () => {
                 <SwiperSlide>
                     <img src={Examportal} alt="" />
                 </SwiperSlide>
-                <SwiperSlide>
+                {/* <SwiperSlide>
                     <img src={CurrencyConverter} alt="" />
-                </SwiperSlide>
+                </SwiperSlide> */}
                 <SwiperSlide>
                     <img src={Comingsoon} alt="" />
                 </SwiperSlide>
